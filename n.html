@@ -1403,6 +1403,11 @@ function logout() {
       window.close();
     }
 
+function logout() {
+    sessionStorage.removeItem("authenticated");
+    localStorage.setItem("justLoggedOut", "true");
+    window.location.href = "login.html";
+  }
 </script>
 
         
